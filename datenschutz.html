@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — Jarvis</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  h1 { font-size: 1.8rem; }
+  h2 { margin-top: 2.5rem; font-size: 1.2rem; }
+  .stand { opacity: 0.7; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.5rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+  th, td { border: 1px solid #8884; padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+  code { font-size: 0.9em; word-break: break-all; }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #8884; font-size: 0.9rem; opacity: 0.8; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="stand">Für die Anwendung „Jarvis“. Stand: 20. September 2026.</p>
+
+<h2>1. Verantwortlicher</h2>
+<p>
+  Marcel<br>
+  Baden-Württemberg, Deutschland<br>
+  <a class="kontakt" href="#" data-k="moc.liamg@9002ramoruam.id">di&hellip;@gmail.com</a>
+</p>
+<p style="font-size:0.92em; opacity:0.75;">
+  Die Adresse ist gegen automatische Sammler geschützt und wird beim Anklicken
+  vollständig geöffnet.
+</p>
+
+<h2>2. Wer diese Anwendung nutzt</h2>
+<p>
+  Jarvis ist ein privater, selbstgebauter Assistent. Er wird ausschließlich vom
+  Verantwortlichen selbst genutzt, für dessen eigene Daten. Es gibt keine
+  weiteren Nutzerinnen und Nutzer, keine Registrierung und kein öffentliches
+  Angebot.
+</p>
+
+<h2>3. Welche Google-Daten abgerufen werden</h2>
+<table>
+  <tr>
+    <th>Berechtigung</th>
+    <th>Was damit passiert</th>
+  </tr>
+  <tr>
+    <td><code>gmail.readonly</code></td>
+    <td>Liest E-Mails aus dem eigenen Postfach (Absender, Betreff, Datum, Text),
+        um Fristen und Termine darin zu erkennen. Es wird nichts gesendet,
+        gelöscht, verschoben oder als gelesen markiert.</td>
+  </tr>
+  <tr>
+    <td><code>calendar.readonly</code></td>
+    <td>Liest die eigenen Kalendertermine, um anstehende Verpflichtungen zu kennen.</td>
+  </tr>
+  <tr>
+    <td><code>calendar.events</code></td>
+    <td>Legt Kalendertermine an oder löscht sie — ausschließlich nach vorheriger
+        Bestätigung im Einzelfall durch den Verantwortlichen.</td>
+  </tr>
+</table>
+
+<h2>4. Wo die Daten liegen</h2>
+<ul>
+  <li>Abgerufene Termine und E-Mail-Inhalte werden als Textdateien auf den
+      privaten Geräten des Verantwortlichen gespeichert (ein Raspberry Pi und ein
+      Windows-PC im eigenen Haushalt).</li>
+  <li>Die Zugriffsschlüssel (OAuth-Token) liegen ebenfalls nur lokal auf diesen
+      Geräten.</li>
+  <li>E-Mail-Inhalte werden nicht in die Versionsverwaltung übernommen und
+      landen nicht in einem Code-Speicher.</li>
+  <li>Es gibt keine eigene Datenbank, keinen eigenen Server im Internet und
+      keine Analyse- oder Werbedienste.</li>
+</ul>
+
+<h2>5. Weitergabe an Dritte</h2>
+<p>
+  Die Daten werden nicht verkauft, nicht vermietet und nicht für Werbung genutzt.
+  Es gibt genau eine Weitergabe:
+</p>
+<ul>
+  <li>
+    <strong>Anthropic (Claude).</strong> Um aus den E-Mails Termine und Fristen
+    herauszulesen, übergibt Jarvis die betreffenden E-Mail-Inhalte an das
+    Sprachmodell Claude von Anthropic. Diese Verarbeitung dient allein der
+    Auswertung für den Verantwortlichen.
+    Siehe die <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Datenschutzerklärung von Anthropic</a>.
+  </li>
+</ul>
+<p>
+  Darüber hinaus werden keine Google-Nutzerdaten an Dritte übermittelt.
+</p>
+
+<h2>6. Google API Services User Data Policy</h2>
+<p>
+  Die Nutzung und Weitergabe von Informationen, die über Google APIs empfangen
+  werden, folgt der
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>,
+  einschließlich der dortigen Anforderungen zur eingeschränkten Verwendung
+  (Limited Use).
+</p>
+<p>
+  Insbesondere werden die über Gmail abgerufenen Daten ausschließlich für die
+  oben beschriebenen, für den Nutzer sichtbaren Funktionen verwendet, nicht für
+  Werbung, nicht zum Verkauf, und nicht zum Trainieren allgemeiner KI-Modelle.
+</p>
+
+<h2>7. Aufbewahrung und Löschung</h2>
+<ul>
+  <li>Die abgelegten Termin- und E-Mail-Dateien werden bei jedem neuen Abruf
+      vollständig überschrieben; es wird keine Historie aufgebaut.</li>
+  <li>Alle lokal gespeicherten Daten können jederzeit durch Löschen der
+      betreffenden Dateien auf den Geräten entfernt werden.</li>
+</ul>
+
+<h2>8. Erlaubnis widerrufen</h2>
+<p>
+  Der Zugriff lässt sich jederzeit unter
+  <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>
+  entziehen. Danach kann Jarvis keine Google-Daten mehr abrufen.
+</p>
+
+<h2>9. Änderungen</h2>
+<p>
+  Ändert sich, was die Anwendung mit Google-Daten tut, wird diese Seite
+  entsprechend angepasst. Das Datum oben zeigt den jeweils aktuellen Stand.
+</p>
+
+<footer>
+  <p><a href="index.html">Zurück zur Startseite</a></p>
+</footer>
+
+<script>
+  /* Siehe Startseite: Adresse wird erst im Browser zusammengesetzt. */
+  document.querySelectorAll("a.kontakt").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = "mailto:" + el.dataset.k.split("").reverse().join("");
+    });
+  });
+</script>
+
+</body>
+</html>

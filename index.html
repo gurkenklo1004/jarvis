@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis — persönlicher Assistent</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+  .untertitel { opacity: 0.7; margin-top: 0; }
+  h2 { margin-top: 2.5rem; font-size: 1.25rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4rem; }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #8884; font-size: 0.9rem; opacity: 0.8; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Jarvis</h1>
+<p class="untertitel">Ein privater Assistent, gebaut und betrieben von Marcel.</p>
+
+<h2>Was Jarvis ist</h2>
+<p>
+  Jarvis ist ein selbstgebauter persönlicher Assistent. Er läuft auf einem
+  Raspberry Pi und einem Windows-PC im Haushalt des Betreibers und hilft bei
+  Alltagsdingen: Termine nachsehen, Post durchgehen, an Fristen erinnern,
+  Notizen ordnen.
+</p>
+
+<h2>Wer ihn benutzt</h2>
+<p>
+  Nur der Betreiber selbst. Jarvis ist kein Produkt, wird nicht verkauft, hat
+  keine Anmeldung für Fremde und wirbt niemanden an.
+</p>
+
+<h2>Was er mit Google macht</h2>
+<p>
+  Mit ausdrücklicher Erlaubnis liest Jarvis den Google-Kalender und das Gmail-Postfach
+  des Betreibers, damit er anstehende Termine und Fristen kennt. Er kann außerdem
+  Kalendereinträge anlegen — aber nur, wenn der Betreiber das vorher im Einzelfall
+  bestätigt hat.
+</p>
+<p>
+  Was genau abgerufen wird, wo es gespeichert wird und wie man die Erlaubnis wieder
+  entzieht, steht in der <a href="datenschutz.html">Datenschutzerklärung</a>.
+</p>
+
+<footer>
+  <p>
+    Betreiber: Marcel, Baden-Württemberg, Deutschland<br>
+    Kontakt: <a class="kontakt" href="#" data-k="moc.liamg@9002ramoruam.id">di&hellip;@gmail.com</a><br>
+    <a href="datenschutz.html">Datenschutzerklärung</a>
+  </p>
+</footer>
+
+<script>
+  /* Adresse steht nirgends lesbar im Quelltext - Spam-Sammler finden nichts.
+     Beim Klick wird sie im Browser zusammengesetzt, fuer Menschen funktioniert
+     der Link ganz normal. */
+  document.querySelectorAll("a.kontakt").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = "mailto:" + el.dataset.k.split("").reverse().join("");
+    });
+  });
+</script>
+
+</body>
+</html>
